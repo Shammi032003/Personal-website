@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { asset } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
 import { Section } from '@/components/shared/section';
@@ -43,7 +44,7 @@ export function Institutions() {
                     <div className="flex-none w-full">
                       <div className="w-full flex items-center justify-center" style={{ height: 100 }}>
                         <Image
-                          src={inst.img}
+                          src={asset(inst.img)}
                           alt={`${inst.name} logo`}
                           width={200}
                           height={80}

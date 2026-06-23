@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import { asset } from '@/lib/utils';
 import { Section } from '@/components/shared/section';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Reveal } from '@/components/shared/reveal';
@@ -22,7 +23,7 @@ export function Education() {
                 {/* Left column: 40% */}
                 <div className="md:w-2/5 flex-shrink-0 flex flex-col items-start gap-6">
                   <div className="bg-white rounded-xl p-4 flex items-center justify-center" style={{ width: 190, height: 190 }}>
-                    <Image src="/penn-logo.jpeg" alt="University of Pennsylvania logo" width={160} height={160} className="object-contain" />
+                    <Image src={asset('/penn-logo.jpeg')} alt="University of Pennsylvania logo" width={160} height={160} className="object-contain" />
                   </div>
 
                   <div className="mt-1">
@@ -54,7 +55,7 @@ export function Education() {
               <div className="flex flex-col md:flex-row md:items-start md:gap-8">
                 <div className="md:w-2/5 flex-shrink-0 flex flex-col items-start gap-6">
                   <div className="bg-white rounded-xl p-4 flex items-center justify-center" style={{ width: 190, height: 190 }}>
-                    <Image src="/bnmit-logo.jpeg" alt="BNM Institute of Technology logo" width={160} height={160} className="object-contain" />
+                    <Image src={asset('/bnmit-logo.jpeg')} alt="BNM Institute of Technology logo" width={160} height={160} className="object-contain" />
                   </div>
 
                   <div className="mt-1">
