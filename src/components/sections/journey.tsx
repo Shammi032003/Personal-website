@@ -12,12 +12,12 @@ export function Journey() {
         <SectionHeading
           eyebrow="Section 01 — The Journey"
           title="The Journey"
-          description="From first principles to research labs and enterprise AI — a timeline of building, researching, and inventing."
+          description="AI Engineer, researcher, and inventor building intelligent systems across enterprise AI, machine learning, and large-scale software."
         />
 
         <div className="mt-8 max-w-3xl text-lg text-white/85">
           <p>
-            Her work includes developing enterprise AI systems at Puma, conducting research at DRDO, IISc, and AUT New Zealand, publishing research in IEEE, Springer, and Elsevier, and contributing to patented innovations across AI and IoT systems. She will be pursuing a Master of Science in Computer and Information Science at the University of Pennsylvania.
+            I'm an AI Engineer, researcher, and inventor with experience spanning PUMA, DRDO, IISc, AUT New Zealand, and 42Gears. My work focuses on enterprise AI, multi-agent systems, computer vision, neuroscience-inspired computing, and large-scale software systems. I've published research in IEEE, Springer, and Elsevier, contributed to multiple patented innovations, and led award-winning teams in national and international competitions. Currently pursuing a Master of Science in Computer and Information Science at the University of Pennsylvania, I'm passionate about building scalable AI systems that transform research into real-world impact.
           </p>
         </div>
 
