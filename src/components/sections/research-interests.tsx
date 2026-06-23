@@ -91,6 +91,7 @@ export function ResearchInterests() {
       description: string;
       technologies: string[];
       keyWork: string[];
+      impact?: string[];
     }
   > = {
     enterprise: {

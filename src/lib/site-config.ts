@@ -11,7 +11,8 @@ export const siteConfig = {
   title: 'Shamitha Gaddam — AI Engineer & Researcher',
   description:
     'AI Engineer, Researcher, Inventor and Builder. Building intelligent systems that learn, reason, and adapt — spanning agentic AI, computer vision, and neuroscience-inspired models.',
-  url: 'https://shamithagaddam.github.io',
+  // Public URL (used for OpenGraph/meta & absolute links)
+  url: 'https://Shammi032003.github.io/Personal-website',
   // The resume PDF lives in /public. Drop your real file at public/resume.pdf.
   resume: 'resume.pdf',
   email: 'shamitha.gaddam@example.com',

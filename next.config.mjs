@@ -7,23 +7,32 @@
  *   NEXT_PUBLIC_BASE_PATH automatically from the repository name. For a user
  *   page (https://<user>.github.io) or a custom domain, leave it empty.
  */
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+// For GitHub Pages deployment to Shammi032003/Personal-website
+// we use an explicit basePath and assetPrefix so all assets and routes
+// are emitted under the repository subpath.
+const basePath = '/Personal-website';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+
   basePath,
-  assetPrefix: basePath || undefined,
+  assetPrefix: basePath,
+
   trailingSlash: true,
+
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+
   images: {
-    // GitHub Pages has no Next.js image optimizer at runtime.
     unoptimized: true,
   },
-  // Animations + 3D code lives in heavy client components; we never want a
-  // lint or transient type warning to block a static export.
+
   eslint: {
     ignoreDuringBuilds: true,
   },
+
   reactStrictMode: true,
 };
 
